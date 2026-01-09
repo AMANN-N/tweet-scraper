@@ -1,0 +1,27 @@
+# Target user to fetch tweets from
+target_username: ""
+
+# Output File
+output_file: "tweets.md"
+
+# Search configuration
+search:
+  include_replies: false
+  include_retweets: false
+  max_results: 50  # Maximum tweets per request (10-100)
+
+  # Optional date range (ISO 8601), leave empty to ignore
+  # start_time: "2023-01-01T00:00:00Z"
+  # end_time: "2023-12-31T23:59:59Z"
+
+# Filtering Logic
+# Leave 'topics' dictionary empty to fetch EVERYTHING (no filtering).
+# Populate it if you want to filter by keywords.
+topics: {}  # Empty dictionary = fetch all tweets, then filter
+  # Examples (uncomment to enable):
+  # AI:
+  #   - "AI"
+  #   - "artificial intelligence"
+  # Python:
+  #   - "Python"
+  #   - "python programming"
